@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse - GeorgeOnePrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+    <!-- același header ca în index.html -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo-georgeoneprice.svg" alt="GeorgeOnePrice">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="produse.html" class="active">Produse</a></li>
+                    <li><a href="despre-noi.html">Despre noi</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cos.html" class="cart-link">Coș (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page">
+        <section class="page-header">
+            <div class="container">
+                <h1>Toate produsele</h1>
+                <p>Toate articolele au <strong>același preț</strong>. Alege ce ai nevoie, fără grija comparațiilor.</p>
+            </div>
+        </section>
+
+        <!-- Filtre / categorii -->
+        <section class="filters">
+            <div class="container filters-inner">
+                <div class="filter-group">
+                    <label for="categorie">Filtrează după categorie:</label>
+                    <select id="categorie" name="categorie">
+                        <option value="toate">Toate</option>
+                        <option value="unelte">Unelte și bricolaj</option>
+                        <option value="consumabile">Consumabile casă</option>
+                        <option value="securitate">Securitate & acces</option>
+                        <option value="bucatarie">Bucătărie</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="search">Caută produs:</label>
+                    <input type="search" id="search" placeholder="Ex: bandă adezivă, saci de gunoi">
+                </div>
+            </div>
+        </section>
+
+        <!-- Listă produse pe categorii -->
+        <section class="product-list container" id="categorie-unelte">
+            <h2>Unelte și bricolaj</h2>
+            <div class="product-grid">
+                <article class="product-card" data-category="unelte">
+                    <img src="images/produse/patent.jpg" alt="Patent universal">
+                    <h3>Patent universal</h3>
+                    <p>Perfect pentru prindere, îndoire și tăiere de sârmă.</p>
+                    <span class="price">Preț unic</span>
+                    <button class="btn btn-small add-to-cart" data-id="10">Adaugă în coș</button>
+                </article>
+
+                <article class="product-card" data-category="unelte">
+                    <img src="images/produse/surubelnite-set.jpg" alt="Set șurubelnițe">
+                    <h3>Set șurubelnițe</h3>
+                    <p>Capete drepte și în cruce pentru cele mai uzuale șuruburi.</p>
+                    <span class="price">Preț unic</span>
+                    <button class="btn btn-small add-to-cart" data-id="11">Adaugă în coș</button>
+                </article>
+
+                <!-- mai multe produse... -->
+            </div>
+        </section>
+
+        <section class="product-list container" id="categorie-consumabile">
+            <h2>Consumabile casă</h2>
+            <div class="product-grid">
+                <article class="product-card" data-category="consumabile">
+                    <img src="images/produse/saci-gunoi.jpg" alt="Saci de gunoi">
+                    <h3>Saci de gunoi</h3>
+                    <p>Rezistenți, potriviți pentru coșurile standard de bucătărie.</p>
+                    <span class="price">Preț unic</span>
+                    <button class="btn btn-small add-to-cart" data-id="20">Adaugă în coș</button>
+                </article>
+                <!-- etc -->
+            </div>
+        </section>
+
+        <section class="product-list container" id="categorie-securitate">
+            <h2>Securitate & acces</h2>
+            <div class="product-grid">
+                <article class="product-card" data-category="securitate">
+                    <img src="images/produse/lacat-mic.jpg" alt="Lacăt mic">
+                    <h3>Lacăt mic</h3>
+                    <p>Ideal pentru dulapuri, cutii sau bagaje.</p>
+                    <span class="price">Preț unic</span>
+                    <button class="btn btn-small add-to-cart" data-id="30">Adaugă în coș</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- același footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> GeorgeOnePrice. Toate drepturile rezervate.</p>
+            <nav class="footer-nav">
+                <a href="despre-noi.html">Despre noi</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

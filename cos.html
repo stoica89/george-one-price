@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coș - GeorgeOnePrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo-georgeoneprice.svg" alt="GeorgeOnePrice">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="produse.html">Produse</a></li>
+                    <li><a href="despre-noi.html">Despre noi</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cos.html" class="active cart-link">Coș (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <section class="container">
+            <h1>Coș de cumpărături</h1>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Produs</th>
+                        <th>Cantitate</th>
+                        <th>Preț unitar</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- rândurile de produs vor fi adăugate din JS/PHP -->
+                    <tr class="cart-empty">
+                        <td colspan="5">Coșul tău este gol.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <p>Total produse: <span id="cart-total-items">0</span></p>
+                <p>Total de plată: <span id="cart-total-price">0 lei</span></p>
+                <div class="cart-actions">
+                    <a href="produse.html" class="btn btn-secondary">Continuă cumpărăturile</a>
+                    <a href="#" class="btn btn-primary">Finalizare comandă</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> GeorgeOnePrice. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+</body>
+</html>

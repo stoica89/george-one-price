@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeorgeOnePrice - Obiecte de zi cu zi la preț unic</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <!-- înlocuiești cu logo-ul tău -->
+          <img src="Images/logo-name.png" alt="GeorgeOnePrice" />
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="despre-noi.html">Despre noi</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="cos.html" class="cart-link"
+                >Coș (<span id="cart-count">0</span>)</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO: banner principal -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Obiecte de zi cu zi la <strong>preț unic</strong></h1>
+            <p>
+              GeorgeOnePrice îți aduce la un singur preț tot ce ai nevoie în
+              casă: unelte mici, consumabile, accesorii și articole practice
+              pentru fiecare zi.
+            </p>
+            <div class="hero-actions">
+              <a href="produse.html" class="btn btn-primary"
+                >Vezi toate produsele</a
+              >
+              <a href="#sectiune-de-ce" class="btn btn-secondary"
+                >De ce ai nevoie de ele?</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <!-- folosești bannerul creat -->
+            <img src="images/banner-1.png" alt="Obiecte de zi cu zi" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORII POPULARE -->
+      <section class="home-section categories">
+        <div class="container">
+          <h2>Categorii populare</h2>
+          <div class="category-grid">
+            <article class="category-card">
+              <h3>Unelte și bricolaj</h3>
+              <p>
+                Șurubelnițe, clești, cuțite utilitare și alte unelte mici pentru
+                reparații rapide.
+              </p>
+              <a href="produse.html#categorie-unelte" class="link"
+                >Vezi categoria</a
+              >
+            </article>
+
+            <article class="category-card">
+              <h3>Consumabile casă</h3>
+              <p>
+                Saci de gunoi, pungi, bureți, bandă adezivă și alte produse
+                esențiale.
+              </p>
+              <a href="produse.html#categorie-consumabile" class="link"
+                >Vezi categoria</a
+              >
+            </article>
+
+            <article class="category-card">
+              <h3>Securitate & acces</h3>
+              <p>Lacăte, yale mici, brelocuri și accesorii pentru chei.</p>
+              <a href="produse.html#categorie-securitate" class="link"
+                >Vezi categoria</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUSE RECOMANDATE (exemplu static, le vom lega din JS/PHP) -->
+      <section class="home-section featured-products">
+        <div class="container">
+          <h2>Produse recomandate</h2>
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="images/produse/surubelnita.jpg" alt="Șurubelniță" />
+              <h3>Șurubelniță universală</h3>
+              <p>Ideală pentru reparații rapide în casă și garaj.</p>
+              <span class="price">Preț unic</span>
+              <button class="btn btn-small add-to-cart" data-id="1">
+                Adaugă în coș
+              </button>
+            </article>
+
+            <article class="product-card">
+              <img src="images/produse/saci-gunoi.jpg" alt="Saci de gunoi" />
+              <h3>Saci de gunoi rezistenți</h3>
+              <p>Potriviți pentru uz zilnic în bucătărie sau birou.</p>
+              <span class="price">Preț unic</span>
+              <button class="btn btn-small add-to-cart" data-id="2">
+                Adaugă în coș
+              </button>
+            </article>
+
+            <article class="product-card">
+              <img src="images/produse/banda-adeziva.jpg" alt="Bandă adezivă" />
+              <h3>Bandă adezivă multifuncțională</h3>
+              <p>Perfectă pentru împachetare, reparații și fixări rapide.</p>
+              <span class="price">Preț unic</span>
+              <button class="btn btn-small add-to-cart" data-id="3">
+                Adaugă în coș
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DE CE AI NEVOIE DE ACESTE PRODUSE -->
+      <section class="home-section why" id="sectiune-de-ce">
+        <div class="container">
+          <h2>De ce ai nevoie de aceste produse?</h2>
+          <div class="why-grid">
+            <article>
+              <h3>Rezolvi rapid problemele mici din casă</h3>
+              <p>
+                Un șurub slăbit, un sac de gunoi lipsă sau o pungă de care ai
+                nevoie chiar acum – toate se rezolvă cu obiecte simple, dar
+                esențiale.
+              </p>
+            </article>
+            <article>
+              <h3>Totul la un singur preț</h3>
+              <p>
+                Nu mai pierzi timp comparând prețuri pentru fiecare obiect.
+                Alegi ce îți trebuie, știind că totul este la același tarif.
+              </p>
+            </article>
+            <article>
+              <h3>Stoc de siguranță acasă</h3>
+              <p>
+                Când ai la îndemână saci, pungi, bandă, lacăte și unelte, nu mai
+                amâni micile reparații sau task-uri zilnice.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> GeorgeOnePrice. Toate drepturile
+          rezervate.
+        </p>
+        <nav class="footer-nav">
+          <a href="despre-noi.html">Despre noi</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Termeni și condiții</a>
+          <a href="#">Politica de confidențialitate</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
