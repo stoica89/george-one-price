@@ -128,8 +128,8 @@ p {
 }
 
 .logo img {
-    height: 48px;
-    width: auto;
+    height: 100px;
+    width: 130px;
     display: block;
 }
 
@@ -562,6 +562,52 @@ main {
 }
 
 /* ===========================
+   BUTOANE FLOTANTE
+   =========================== */
+
+.floating-btn {
+    position: fixed;
+    bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.28);
+    z-index: 40;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+    text-decoration: none;
+}
+
+.floating-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(37, 99, 235, 0.35);
+    text-decoration: none;
+}
+
+.floating-btn .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.floating-btn-cart {
+    right: 1rem;
+}
+
+.floating-btn-phone {
+    left: 1rem;
+    background: #0ea5e9;
+    box-shadow: 0 14px 30px rgba(14, 165, 233, 0.28);
+}
+
+.floating-btn-phone:hover {
+    box-shadow: 0 16px 36px rgba(14, 165, 233, 0.35);
+}
+
+/* ===========================
    RESPONSIVE
    =========================== */
 
@@ -657,5 +703,11 @@ main {
 
     .container {
         padding: 0 1rem;
+    }
+
+    .floating-btn {
+        padding: 0.6rem 0.85rem;
+        font-size: 0.9rem;
+        gap: 0.4rem;
     }
 }
