@@ -1,78 +1,130 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Despre noi - GeorgeOnePrice</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="assets/js/app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header identic -->
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo">
-                <img src="images/logo-name.png" alt="GeorgeOnePrice">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Acasă</a></li>
-                    <li><a href="produse.html">Produse</a></li>
-                    <li><a href="despre-noi.html" class="active">Despre noi</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cos.html" class="cart-link">Coș (<span id="cart-count">0</span>)</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/logo-new.png" alt="GeorgeOnePrice" />
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="despre-noi.html" class="active">Despre noi</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="cos.html" class="cart-link"
+                >Cos (<span id="cart-count">0</span>)</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="about-page">
-        <section class="page-header">
-            <div class="container">
-                <h1>Despre GeorgeOnePrice</h1>
-                <p>Magazin cu obiecte de zi cu zi la preț unic.</p>
-            </div>
-        </section>
+      <section class="page-header">
+        <div class="container">
+          <h1>Despre GeorgeOnePrice</h1>
+          <p>Magazin cu obiecte de zi cu zi la pret unic.</p>
+        </div>
+      </section>
 
-        <section class="container about-content">
-            <article>
-                <h2>Cine suntem</h2>
-                <p>Aici vei scrie povestea afacerii: cum a apărut ideea, cine este în spate (George, echipa etc.). Scopul este să arăți că înțelegi nevoile oamenilor și că alegi produse utile, testate și practice.</p>
-            </article>
+      <section class="container about-content">
+        <article>
+          <h2>Cine suntem</h2>
+          <p>
+            Suntem un magazin pornit dintr-o idee simpla: oamenii au nevoie de
+            produse practice, de calitate, care sa le faca viata mai usoara. Ne
+            concentram pe lucruri utile, bine alese si testate, astfel incat
+            fiecare comanda sa ofere exact ce promite. Punem accent pe
+            seriozitate, transparenta si o experienta de cumparare fara batai de
+            cap. Vrem ca orice client sa gaseasca rapid ceea ce cauta si sa stie
+            ca poate avea incredere in noi - de la descrieri clare pana la
+            livrare. Alegem articole care rezolva probleme reale si aduc
+            valoare, nu doar "umplu raftul". Daca un produs ajunge la noi in
+            oferta, inseamna ca merita. Scopul nostru e simplu: lucruri bune, la
+            pret corect, cu un serviciu pe care te poti baza.
+          </p>
+        </article>
 
-            <article>
-                <h2>De ce preț unic?</h2>
-                <p>Explică pe scurt avantajul pentru client: simplitate, transparență, fără surprize. Clientul alege după utilitate, nu după calcule complicate de preț.</p>
-            </article>
+        <article>
+          <h2>De ce pret unic?</h2>
+          <p>
+            Am ales pretul unic pentru ca este simplu, corect si usor de
+            inteles. Fara calcule complicate, fara promotii care induc in eroare
+            si fara diferente nejustificate intre produse similare. Pretul unic
+            iti aduce trei avantaje clare: <br />
+            1. Alegi linistit. Nu mai compari zeci de valori si oferte. Iti
+            place produsul? Stii exact cat costa. <br />
+            2. Evitam "trucurile de marketing". Nu exista reduceri false,
+            preturi umflate sau diferente artificiale. Totul este direct si
+            corect. <br />
+            3. Eficienta si viteza. Navighezi mai rapid printre produse, comanzi
+            mai repede si iei decizii fara stres. Pentru noi, pretul unic
+            inseamna respect pentru client si transparenta totala - o regula
+            simpla care lucreaza in favoarea ta.
+          </p>
+        </article>
 
-            <article>
-                <h2>Ce fel de produse vindem</h2>
-                <ul>
-                    <li>Unelte mici pentru casă și bricolaj</li>
-                    <li>Consumabile – saci de gunoi, pungi, bandă adezivă</li>
-                    <li>Articole de bucătărie – cuțite, foarfece, accesorii</li>
-                    <li>Articole de securitate – lacăte, mici accesorii pentru uși și ferestre</li>
-                </ul>
-            </article>
+        <article>
+          <h2>Ce fel de produse vindem</h2>
+          <ul class="product-types">
+            <li class="product-type icon-tools">
+              Unelte mici pentru casa si bricolaj
+            </li>
+            <li class="product-type icon-consumables">
+              Consumabile - saci de gunoi, pungi, banda adeziva
+            </li>
+            <li class="product-type icon-kitchen">
+              Articole de bucatarie - cutite, foarfece, accesorii
+            </li>
+            <li class="product-type icon-security">
+              Articole de securitate - lacate, accesorii pentru usi si ferestre
+            </li>
+          </ul>
+        </article>
 
-            <article>
-                <h2>Promisiunea noastră</h2>
-                <p>Texte de genul: „selectăm produse pe care le-am folosi și noi acasă”, „livrăm rapid”, „răspundem la mesaje”, etc.</p>
-            </article>
-        </section>
+        <article>
+          <h2>Promisiunea noastra</h2>
+          <p>
+            Promitem sa fim un magazin pe care te poti baza: fara artificii,
+            fara complicatii si fara surprize neplacute. Tot ce vezi in site
+            este exact ceea ce primesti. Ne asumam trei lucruri esentiale:
+            <br />1. Produse utile si bine alese. Nu listam nimic doar ca sa
+            umplem catalogul. Fiecare produs este selectat pentru utilitatea lui
+            reala. <br />2. Pret corect, fara jocuri de culise. Pastram
+            transparenta de la primul click pana la livrare. Ce este afisat,
+            aceea platesti. <br />3. Respect fata de client. Comunicare clara,
+            suport rapid si solutii concrete daca apare vreo problema. Daca
+            facem ceva, il facem ca lumea.
+          </p>
+        </article>
+      </section>
     </main>
 
     <!-- footer -->
     <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>&copy; <span id="year"></span> GeorgeOnePrice. Toate drepturile rezervate.</p>
-        </div>
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> GeorgeOnePrice. Toate drepturile
+          rezervate.
+        </p>
+      </div>
     </footer>
 
     <a
       class="floating-btn floating-btn-cart"
       href="cos.html"
-      aria-label="Deschide coșul"
+      aria-label="Deschide cosul"
     >
       <svg
         aria-hidden="true"
@@ -85,13 +137,13 @@
           d="M7 4a1 1 0 0 0-1 1v1H3a1 1 0 1 0 0 2h1.1l.75 9A2 2 0 0 0 6.84 19H18a1 1 0 0 0 0-2H6.84l-.14-2H18a2 2 0 0 0 1.98-1.74l.7-6A2 2 0 0 0 18.7 5H16V4a1 1 0 0 0-1-1zm2 2h6v1a1 1 0 0 0 1 1h2.3l-.64 6H6.6l-.48-6H9a1 1 0 0 0 1-1zM9 20.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m10 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"
         />
       </svg>
-      <span>Coș</span>
+      <span>Cos</span>
     </a>
 
     <a
       class="floating-btn floating-btn-phone"
       href="tel:0750846085"
-      aria-label="Sună-ne"
+      aria-label="Suna-ne"
     >
       <svg
         aria-hidden="true"
@@ -104,7 +156,7 @@
           d="M16.39 13.52a2 2 0 0 0-1.74.06l-.76.38a1 1 0 0 1-1-.07a10.8 10.8 0 0 1-3.27-3.27a1 1 0 0 1-.07-1l.38-.76a2 2 0 0 0 .06-1.74l-.7-1.4A2 2 0 0 0 8.39 4H7a2 2 0 0 0-2 2.2a14 14 0 0 0 12.8 12.8A2 2 0 0 0 20 17v-1.39a2 2 0 0 0-1.25-1.85z"
         />
       </svg>
-      <span>Sună 0750 846 085</span>
+      <span>Suna 0750 846 085</span>
     </a>
-</body>
+  </body>
 </html>
